@@ -61,9 +61,10 @@ class LifeCycleSample extends Component {
     const style = {
       color: this.props.color,
     };
+    console.log(style);
     return (
       <div>
-        <h1 sytle={style} ref={(ref) => (this.myRef = ref)}>
+        <h1 sytle={style} ref={ref => (this.myRef = ref)}>
           {this.state.number}
         </h1>
         <p>color : {this.state.color}</p>
@@ -72,3 +73,5 @@ class LifeCycleSample extends Component {
     );
   }
 }
+
+export default LifeCycleSample;
